@@ -24,7 +24,8 @@ const onClickbtn = () => {
   const deleteButton = document.createElement("button");
   deleteButton.innerText = "削除";
   deleteButton.addEventListener("click", () => {
-    alert("削除");
+    const deleteInput = deleteButton.parentNode;
+    document.getElementById("incomplete-list").removeChild(deleteInput);
   });
 
   //devタグの子要素に各要素を設定
