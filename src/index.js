@@ -58,7 +58,6 @@ const createIncompleteList = (text) => {
 
       //テキスト取得
       const text = backButton.parentNode.firstElementChild.innerText;
-      console.log(text);
 
       createIncompleteList(text);
     });
